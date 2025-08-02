@@ -1,5 +1,5 @@
 # prompt
-PROMPT="%F{8}%~%f %F{white}%n%f%B%F{8}@%f%b%F{8}%m%f%B%F{9} ›› %f%b"
+PROMPT="%n@%m %~%F{red} ? %f"
 
 # autocomplete
 autoload -Uz compinit && compinit
