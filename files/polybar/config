@@ -1,0 +1,58 @@
+[bar/main]
+modules-left = uname i3
+modules-right = xkeyboard pulseaudio date
+monitor = HDMI-0
+height = 28
+font-0 = "JetBrains Mono Nerd Font;3"
+padding = 1
+module-margin = 1
+
+[bar/slave]
+modules-left = uname i3
+modules-right = date
+monitor = DP-2
+height = 28
+font-0 = "JetBrains Mono Nerd Font;3"
+padding = 1
+module-margin = 1
+
+[module/date]
+type = internal/date
+date = %d.%m.%y
+time = %H:%M
+format = <label>
+label = %date% %time%
+
+[module/xkeyboard]
+type = internal/xkeyboard
+label-layout = %icon%
+layout-icon-0 = us;EN
+layout-icon-1 = ru;RU
+
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = false
+
+[module/uname]
+type = custom/script
+exec = "uname -n"
+format = 󰣇 <label>
+label-foreground = #ffffff
+format-foreground = #1793d1
+
+[module/i3]
+type = internal/i3
+pin-workspaces = true
+index-sort = true
+
+label-focused = %index%
+label-focused-padding = 2
+label-unfocused = %index%
+label-unfocused-padding = 2
+label-visible = %index%
+label-visible-padding = 2
+label-urgent = %index%
+label-urgent-padding = 2
+
+label-focused-background = #1793d1
+label-visible-background = #0d4c6b
