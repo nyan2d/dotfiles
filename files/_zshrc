@@ -1,6 +1,5 @@
 # prompt
-local TERM_STRING='%(!.%F{red}#%f.%F{cyan}❯%f)'
-PROMPT="%F{8}%~%f $TERM_STRING "
+PROMPT="%F{8}%~%f %F{white}%n%f%B%F{8}@%f%b%F{8}%m%f%B%F{9} ›› %f%b"
 
 # autocomplete
 autoload -Uz compinit && compinit
