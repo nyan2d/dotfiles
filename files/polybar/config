@@ -1,7 +1,7 @@
 [bar/main]
 modules-left = uname i3
 modules-right = xkeyboard pulseaudio date
-monitor = HDMI-0
+monitor = DP-2
 height = 28
 font-0 = "JetBrains Mono Nerd Font;3"
 padding = 1
@@ -10,7 +10,7 @@ module-margin = 1
 [bar/slave]
 modules-left = uname i3
 modules-right = date
-monitor = DP-2
+monitor = HDMI-0
 height = 28
 font-0 = "JetBrains Mono Nerd Font;3"
 padding = 1
