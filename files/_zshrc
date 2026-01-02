@@ -4,13 +4,16 @@ PROMPT="%n@%m %~%F{red} ? %f"
 # autocomplete
 autoload -Uz compinit && compinit
 
+# truecolor mode
+export COLORTERM=truecolor
+
 # vim mode
 bindkey -v
 export KEYTIMEOUT=1
 
 # envs
 export EDITOR=nvim
-export GOPROXY=direct
+export GOPROXY=https://goproxy.cn,direct
 path+=($HOME'/go/bin')
 export PATH
 
