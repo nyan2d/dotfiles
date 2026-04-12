@@ -15,6 +15,7 @@ export KEYTIMEOUT=1
 export EDITOR=nvim
 export GOPROXY=https://goproxy.cn,direct
 path+=($HOME'/go/bin')
+path+=($HOME'/.local/bin')
 export PATH
 
 # aliases
