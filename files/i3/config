@@ -15,6 +15,9 @@ font pango:monospace 8
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+# Display config
+exec_always --no-startup-id sh ~/.config/i3/display.sh
+
 # Wallpaper
 exec_always --no-startup-id feh --bg-scale ~/.config/w.jpg
 
