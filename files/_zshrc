@@ -1,5 +1,5 @@
 # prompt
-PROMPT="%F{10}%n%f %F{15}%~%f%F{40} $ %f"
+PROMPT="%F{10}%n%f%F{7}@%f%F{7}%m%f %F{39}%~%f%F{10} $ %f"
 
 # autocomplete
 autoload -Uz compinit && compinit
